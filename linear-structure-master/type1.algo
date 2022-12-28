@@ -1,0 +1,19 @@
+ALGORITHM linear structure
+VAR
+    arr1={},arr2={},sums=0,i=0:INTEGER
+BEGIN
+   read(arr1)
+  read(arr2)
+  FOR i FROM 0 TO arr1[i] STEP 1  DO
+    IF (arr1[i]!=arr2[i]) THEN
+    sums=sums+arr1[i]    
+         
+    END_IF
+    FOR i FROM 0 TO arr2[i] STEP 1  DO
+        IF (arr2[i]!=arr1[i]) THEN
+            sums=sums+arr2[i]
+        END_IF
+    END_FOR
+  END_FOR  
+  write(sums)
+END

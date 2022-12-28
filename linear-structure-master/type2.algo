@@ -1,0 +1,14 @@
+ALGORITHM hashtable
+VAR
+    HASH_TABLE<integer,integer>
+BEGIN
+    htab:HASH_TABLE<integer,integer>
+    FOR i FROM 0 TO arr.length STEP 1  DO
+        VAR sumMinusElement=S - arr[i]
+
+    END_FOR
+    IF (htab[sumMinusElement.tostring()])!= undefined THEN
+        sums.push([arr[i]])
+    END_IF
+    write(sums)
+END
